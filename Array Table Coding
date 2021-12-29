@@ -1,0 +1,29 @@
+package selfProgramming;
+
+public class ArrayTable {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		final Object[][] table = new String[14][];
+		table[0] = new String[] {"     Marks	", " GPA	", "  Performance	" };
+		table[1] = new String[] {"   90 - 100	", " 4.00	", "   baz2	" };
+		table[2] = new String[] {"    80 - 89	", " 4.00	", "   foo3	" };
+		table[3] = new String[] {"    75 - 79	", " 3.67	", "   baz4	" };
+		table[4] = new String[] {"    70 - 74	", " 3.33	", "   baz4	" };
+		table[5] = new String[] {"    65 - 69	", " 3.00	", "   baz4	" };
+		table[6] = new String[] {"    60 - 64	", " 2.67	", "   baz4	" };
+		table[7] = new String[] {"    55 - 59	", " 2.33	", "   baz4	" };
+		table[8] = new String[] {"    50 - 54	", " 2.00	", "   baz4	" }; //min passing GPA
+		table[9] = new String[] {"    45 - 49	", " 1.67	", "   baz4	" };
+		table[10] = new String[] {"    40 - 44 	", " 1.33	", "   baz4	" };
+		table[11] = new String[] {"    35 - 39	", " 1.00	", "   baz4	" };
+		table[12] = new String[] {"     0 - 34	", " 0.00	", "   baz4	" };
+		table[13] = new String[] {"       0  	", " 0.00	", "   baz4	" };
+		
+
+		for (final Object[] row : table) {
+		    System.out.format("|%10s|%10s|%10s|%n", row);
+		}
+	}
+
+}
