@@ -1,0 +1,29 @@
+package selfProgramming;
+import java.util.Scanner;
+public class smallestElement {
+
+	private static Scanner sc;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		sc = new Scanner(System.in);
+		double[] sales = new double[5];
+		//double sales[] = {10.0, 20.0, 50.0, 40.0, 30.0};
+		int index, minIndex;
+		double smallestSale;
+
+		minIndex = 0;
+		System.out.print("Enter 5 array elements: ");
+		for(int i=0; i < sales.length; i++)
+		sales[i] = sc.nextDouble();
+		
+		for(index = 1; index < 5; index++) 
+		   if (sales[minIndex] > sales[index])
+		       minIndex = index;
+		
+		smallestSale = sales[minIndex];
+		
+		System.out.println("Min index = " +minIndex);
+		System.out.println("Smallest Sale = " +smallestSale);
+	}
+
+}
