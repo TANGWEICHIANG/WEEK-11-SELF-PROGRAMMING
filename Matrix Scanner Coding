@@ -1,0 +1,52 @@
+package myArray;
+import java.util.Scanner;
+public class TestArray3 {
+
+	private static Scanner sc;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int sum;
+		int totSum = 0;
+		int nRow, nColumn;
+		int y, z;   
+		sc = new Scanner(System.in);
+		
+		System.out.print("Enter the number of rows: ");    
+		nRow = sc.nextInt();   
+		System.out.print("Enter the number of columns: ");   
+		nColumn = sc.nextInt();
+		
+		int x[][] = new int[nRow][nColumn]; 
+		
+		System.out.println("Enter the elements of the array: ");   
+		for (y = 0; y < nRow; y++)   
+		for (z = 0; z < nColumn; z++)   
+		x[y][z] = sc.nextInt();
+	
+		System.out.println("\nMatrix of the array are: ");   
+		for (y = 0; y < nRow; y++)   
+		{   
+		for (z = 0; z < nColumn; z++)   
+		System.out.print(x[y][z] + " ");   
+		System.out.println();   
+
+		
+		}
+		
+		for (int i=0; i < nRow; i++)
+		{
+			sum = 0;
+			for (int j=0; j < nColumn; j++)
+			{
+				sum = sum + x[i][j]; 
+			}
+			totSum += sum;
+			System.out.println("\nThe sum of " +i+ " row: "+sum);
+			System.out.println("Cumulative sum after " +i+ " row: " +totSum);
+		}
+		
+		
+	}
+
+}
