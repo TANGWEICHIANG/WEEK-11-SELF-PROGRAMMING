@@ -1,0 +1,26 @@
+Enter the number of rows: 3
+Enter the number of columns: 3
+Enter the elements of the array: 
+9
+6
+5
+8
+7
+4
+1
+2
+3
+
+Matrix of the array are: 
+9 6 5 
+8 7 4 
+1 2 3 
+
+The sum of 0 row: 20
+Cumulative sum after 0 row: 20
+
+The sum of 1 row: 19
+Cumulative sum after 1 row: 39
+
+The sum of 2 row: 6
+Cumulative sum after 2 row: 45
